@@ -1,0 +1,30 @@
+<div class="container">
+    <h1 class="text-center">Book List</h1>
+    <div class="text-right mb-3">
+      <button class="btn btn-primary" routerLink="/books/new">Add New Book</button>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.description }}</td>
+          <td>
+            <button class="btn btn-info mr-2" routerLink="/books/{{ book.id }}">View</button>
+            <button class="btn btn-warning mr-2" routerLink="/books/{{ book.id }}/edit">Edit</button>
+            <button *ngIf="book.id !== undefined" class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

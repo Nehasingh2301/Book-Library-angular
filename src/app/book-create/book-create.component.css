@@ -1,0 +1,29 @@
+/* src/app/book-create/book-create.component.css */
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .create-form .form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .create-form .form-group input, 
+  .create-form .form-group textarea {
+    font-size: 1rem;
+  }
+  
+  .create-form .form-group textarea {
+    height: 150px;
+  }
+  
+  .create-form button {
+    align-self: flex-end;
+  }
+  

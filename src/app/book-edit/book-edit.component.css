@@ -1,0 +1,29 @@
+/* src/app/book-edit/book-edit.component.css */
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .edit-form .form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .edit-form .form-group input, 
+  .edit-form .form-group textarea {
+    font-size: 1rem;
+  }
+  
+  .edit-form .form-group textarea {
+    height: 150px;
+  }
+  
+  .edit-form button {
+    align-self: flex-end;
+  }
+  
