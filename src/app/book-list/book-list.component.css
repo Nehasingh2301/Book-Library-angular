@@ -1,37 +1,64 @@
-/* src/app/book-list/book-list.component.css */
+body {
+  font-family: Arial, sans-serif;
+}
 
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    border-collapse: collapse;
-  }
-  
-  .table th, .table td {
-    padding: 0.75rem;
-    text-align: left;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .table thead th {
-    border-bottom: 2px solid #dee2e6;
-    background-color: #e9ecef;
-    font-weight: bold;
-  }
-  
-  .table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
-  }
-  
-  .table tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .table .actions {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .table .actions button {
-    margin-right: 0.5rem;
-  }
-  
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+td button {
+  width: 70px; /* Adjust width to fit all buttons within the cell */
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+button.edit-btn {
+  background-color: #28a745; /* Green for Edit */
+}
+
+button.edit-btn:hover {
+  background-color: #218838;
+}
+
+button.view-btn {
+  background-color: #007bff; /* Blue for View */
+}
+
+button.view-btn:hover {
+  background-color: #0056b3;
+}
+
+button.delete-btn {
+  background-color: #dc3545; /* Red for Delete */
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
